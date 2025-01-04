@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mysti</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href=".//src/media/mysti_logo.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">Mysti <img src="./src/media/mysti_logo.png" alt="Mysti Logo" title="Mysti Logo"
+                    width="35px"></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#social">Social</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="./src/media/bgc.mp4" type="video/mp4">
+            <!-- https://www.pexels.com/video/a-purple-background-with-a-large-number-of-stars-5453622/ -->
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Bem-vinda(o) ao Universo Mysti</h1>
+            <p class="hero-subtitle">"Vai ouvir um lo-fi vai. . ."</p>
+            <button class="subscribe-btn">
+                <i class="fab fa-youtube"></i>
+                Inscreva-se no Canal
+            </button>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="content-grid">
+            <div class="content-card">
+                <h3>Sobre o Canal</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corporis eaque veritatis quos quasi
+                    totam ad modi sunt voluptate sint animi voluptatibus ipsam harum non facilis neque molestias ex
+                    exercitationem, iure ut quam soluta! Ipsam placeat error explicabo pariatur delectus quis ullam
+                    necessitatibus quo saepe nisi non aspernatur, cumque magni porro recusandae quos, dolorem maxime
+                    ratione ducimus similique! Architecto, pariatur.</p>
+            </div>
+            <div class="content-card">
+                <img src="./src/media/Liberando_Komi_-_san_Shoko_Komi.jpg" alt="Splash Art Mysti"
+                    title="Splash Art Mysti">
+                <!-- <h3>Objetivos com a comunidade</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusamus doloremque sit aspernatur dolore sed consequuntur nesciunt tempora sequi harum atque ipsum quidem facere itaque architecto minima quod, officia illo reiciendis asperiores, consequatur unde reprehenderit odit. Soluta mollitia doloremque atque impedit non dolor delectus amet dolore, repellat eos, asperiores neque temporibus esse voluptate consectetur pariatur nihil cumque at ea tempore!</p> -->
+            </div>
+            <div class="content-card">
+                <h3>Comunidade</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laudantium nemo accusamus ducimus, in
+                    blanditiis, vitae officia nisi quas aperiam natus quaerat illum sapiente tempore sed architecto
+                    quod. Sunt sequi nihil libero eveniet ad, facere autem modi. Cupiditate error magnam omnis dicta
+                    ullam veniam, dolorum pariatur optio vitae eos, commodi perferendis asperiores saepe animi quaerat.
+                    Ex labore officiis tenetur repellat!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Videos Section -->
+    <section id="videos" class="videos-section">
+        <h2 class="section-title">Últimos Vídeos</h2>
+        <div class="video-grid">
+            <!-- Video cards serão inseridos via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social" class="social-section">
+        <h2 class="section-title">Conecte-se Comigo</h2>
+        <div class="social-grid">
+            <a href="https://www.youtube.com/@Mysti07" class="social-card" target="_blank">
+                <i class="fab fa-youtube social-icon"></i>
+                <h3>YouTube</h3>
+                <p>Mysti</p>
+            </a>
+            <a href="https://www.twitch.tv/mysti0107" class="social-card" target="_blank">
+                <i class="fab fa-twitch social-icon"></i>
+                <h3>Twitch</h3>
+                <p>danymisty_s2</p>
+            </a>
+            <a href="https://x.com/MystiCYt0" class="social-card" target="_blank">
+                <i class="fab fa-twitter social-icon"></i>
+                <h3>Twitter</h3>
+                <p>mysticyt0</p>
+            </a>
+            <a href="https://www.instagram.com/myst_i07/" class="social-card" target="_blank">
+                <i class="fab fa-instagram social-icon"></i>
+                <h3>Instagram</h3>
+                <p>myst_i07</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Mysti. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/mobile-navbar.js"></script>
+</body>
+
+</html>
