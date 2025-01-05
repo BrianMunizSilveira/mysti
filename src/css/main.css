@@ -70,6 +70,7 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-left: 1rem;
+    color: var(--accent);
 }
 
 nav {
@@ -178,7 +179,8 @@ nav {
 .content-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    flex: 1;
+    padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -186,25 +188,65 @@ nav {
 .content-card {
     background: rgba(139, 92, 246, 0.1);
     padding: 2rem;
-    border-radius: 1rem;
     backdrop-filter: blur(5px);
     transition: transform 0.3s ease;
 }
 
+.content-card h3 {
+    text-align: center;
+    font-size: 25px;
+    color: var(--accent);
+}
+
 .content-card p {
-    margin-top: 1rem;
     color: var(--light);
+    margin-top: 1rem;
+    padding: 2rem;
     line-height: 2;
+    text-align: justify;
 }
 
 .content-card img {
+    margin-top: 1rem;
     width: 100%;
     object-fit: cover;
     border-radius: 1rem;
 }
 
-.content-card:hover {
-    transform: translateY(-10px);
+.content-about {
+    display: flex;
+    align-items: center;
+}
+
+.about-me-section {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    backdrop-filter: blur(5px);
+}
+
+.img-about {
+    flex: 0 0 304px;
+}
+
+.img-about img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+#about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.7rem 2rem;
+    background: linear-gradient(to bottom, var(--dark), var(--secondary));
 }
 
 /* ============================
