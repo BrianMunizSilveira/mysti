@@ -35,14 +35,125 @@
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
+    /* Ajustes para o Hero */
     .hero-title {
         font-size: 2.5rem;
     }
 
-    /* Quando a classe é ativada */
-    .menu-visible {
-        display: flex;
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    /* Ajustes para About Me Section */
+    .about-me-section {
+        flex-direction: column-reverse;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .img-about {
+        flex: none;
+        width: 100%;
+    }
+
+    /* Ajustes para Content Grid */
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+
+    .content-card {
+        padding: 1.5rem;
+    }
+
+    .content-card p {
+        padding: 1rem;
+    }
+
+    /* Ajustes para Navigation */
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50%;
+        height: 92vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        padding: 7rem 0;
+    }
+
+    .nav-list li {
+        margin: 0;
+        opacity: 1;
+    }
+
+    .mobile-menu {
+        display: block;
+        margin-right: 1rem;
+    }
+}
+
+/* Media Query para telas ainda menores */
+@media screen and (max-width: 480px) {
+
+    /* Ajustes adicionais para Hero */
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-content {
+        padding: 1rem;
+    }
+
+    .nav-list {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 5rem 0;
+    }
+
+    /* Ajustes para About Me Section em telas muito pequenas */
+    .about-me-section {
+        margin: 0;
+    }
+
+    /* Ajustes para Social Section */
+    .social-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .social-card {
+        padding: 1.5rem;
+    }
+
+    /* Ajustes para Videos Section */
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animação para o menu mobile */
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
