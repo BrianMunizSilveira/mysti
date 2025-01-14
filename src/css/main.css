@@ -244,7 +244,7 @@ nav {
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2.7rem 2rem;
+    padding: 3.2rem 2rem;
     background: linear-gradient(to bottom, var(--dark), var(--secondary));
 }
 
