@@ -48,14 +48,15 @@
 
     /* Ajustes para About Me Section */
     .about-me-section {
+        display: flex;
         flex-direction: column-reverse;
-        padding: 1rem;
+        align-items: center;
         text-align: center;
     }
-
+    
     .img-about {
-        flex: none;
-        width: 100%;
+        max-width: 304px; /* Mantém a imagem com tamanho máximo em telas menores */
+        margin: 0 auto; /* Centraliza a imagem */
     }
 
     /* Ajustes para Content Grid */
