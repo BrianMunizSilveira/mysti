@@ -218,8 +218,8 @@ nav {
 }
 
 .about-me-section {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 304px 1fr;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
@@ -227,7 +227,8 @@ nav {
 }
 
 .img-about {
-    flex: 0 0 304px;
+    width: 100%;
+    margin-bottom: -0.5rem; /* Margem negativa para compensar tamanho da imagem */
 }
 
 .img-about img {
@@ -236,18 +237,14 @@ nav {
     object-fit: cover;
 }
 
-
 #about-me {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    display: grid;
+    place-items: center;
     max-width: 1200px;
     margin: 0 auto;
     padding: 3.2rem 2rem;
     background: linear-gradient(to bottom, var(--dark), var(--secondary));
 }
-
 /* ============================
    LATEST VIDEOS SECTION
 ============================ */
