@@ -233,7 +233,7 @@ nav {
 
 .img-about img {
     width: 100%;
-    height: auto;
+    height: 99%;
     object-fit: cover;
 }
 
