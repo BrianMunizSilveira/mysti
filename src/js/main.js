@@ -1,22 +1,22 @@
 // Simula os dados dos vídeos
 const videos = [
     {
-        title: "2025 Vai ser Diferente.",
-        thumbnail: "https://i.ytimg.com/vi/dMYDLSpGwLM/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLB-8rFUSH_8XvKXo2BL8yv5B1fmWg",
-        description: "O Canal Vai mudar.",
-        link: "https://www.youtube.com/watch?v=dMYDLSpGwLM"
+        title: "Mic Consertado 👍",
+        thumbnail: "https://i.ytimg.com/vi/XYfA3VEYh-k/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB\u0026rs=AOn4CLBy1TCXzN2PVgZsGA9bT24dxdgPtg",
+        description: "Agora a frequência volta ao normal👍",
+        link: "https://www.youtube.com/watch?v=XYfA3VEYh-k"
     },
     {
-        title: "Não Consigo Aprender.",
-        thumbnail: "https://i.ytimg.com/vi/7Pr76Wgiius/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDGxU-snvTcTY2dFYEhWM3QVysYVQ",
-        description: "É não sei aprender ksksk TDAH? Talvez kkkkk",
-        link: "https://www.youtube.com/watch?v=7Pr76Wgiius"
+        title: "Dois idiotas sobrevivendo no OneBlock ‪@Luxzin‬",
+        thumbnail: "https://i.ytimg.com/vi/V--ugV8aaAM/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB\u0026rs=AOn4CLDEF8qmMGgBETWT-fm_FKnOF3yXvw",
+        description: "Só os assuntos aleatórios e Robertinho do grau sumiu KKKKK Espero que gostem!",
+        link: "https://www.youtube.com/watch?v=V--ugV8aaAM"
     },
     {
         title: "Será Que Você Pode Me Ajudar?",
-        thumbnail: "https://i.ytimg.com/vi/TfUIvk4AjG0/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAtWLizLWsz5H_9DrF6XSRp24q7ew",
-        description: "É pessoal as coisas não estão fáceis.",
-        link: "https://www.youtube.com/watch?v=TfUIvk4AjG0"
+        thumbnail: "https://i.ytimg.com/vi/l_czDYXSfO8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB\u0026rs=AOn4CLC0fwjvnvPJtH5oQmRXtdaCWRJdbg",
+        description: "Hoje resolvi aprender redstone com um nerdola do Minecraft, o ‪@Luxzin‬💡💥 Será que vou explodir tudo? 😂",
+        link: "https://www.youtube.com/watch?v=l_czDYXSfO8"
     }
 ];
 
@@ -26,7 +26,7 @@ function loadVideos() {
     videos.forEach(video => {
         const videoCard = `
                     <div class="video-card">
-                        <img src="${video.thumbnail}" alt="${video.title}" class="video-thumbnail">
+                        <a href="${video.link}" target="_blank"><img src="${video.thumbnail}" alt="${video.title}" class="video-thumbnail"></a>
                         <div class="video-info">
                             <h3 class="video-title">${video.title}</h3>
                             <p>${video.description}</p>
