@@ -1,6 +1,12 @@
 // Simula os dados dos vídeos
 const videos = [
     {
+        title: "Five Nights at Freddy’s Pela Primeira Vez — Mysti",
+        thumbnail: "https://i.ytimg.com/vi/-v1A8nZPus0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCyVcuvqCxCquFUYwOMf1410JjDEA",
+        description: "Se quiserem mais FNAF, trago para vocês!",
+        link: "https://www.youtube.com/watch?v=-v1A8nZPus0"
+    },
+    {
         title: "Mic Consertado 👍",
         thumbnail: "https://i.ytimg.com/vi/XYfA3VEYh-k/hqdefault.jpg?sqp=-oaymwEnCPYBEIoBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB\u0026rs=AOn4CLBy1TCXzN2PVgZsGA9bT24dxdgPtg",
         description: "Agora a frequência volta ao normal👍",
@@ -11,12 +17,6 @@ const videos = [
         thumbnail: "https://i.ytimg.com/vi/V--ugV8aaAM/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB\u0026rs=AOn4CLDEF8qmMGgBETWT-fm_FKnOF3yXvw",
         description: "Só os assuntos aleatórios e Robertinho do grau sumiu KKKKK Espero que gostem!",
         link: "https://www.youtube.com/watch?v=V--ugV8aaAM"
-    },
-    {
-        title: "Será Que Você Pode Me Ajudar?",
-        thumbnail: "https://i.ytimg.com/vi/l_czDYXSfO8/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB\u0026rs=AOn4CLC0fwjvnvPJtH5oQmRXtdaCWRJdbg",
-        description: "Hoje resolvi aprender redstone com um nerdola do Minecraft, o ‪@Luxzin‬💡💥 Será que vou explodir tudo? 😂",
-        link: "https://www.youtube.com/watch?v=l_czDYXSfO8"
     }
 ];
 
