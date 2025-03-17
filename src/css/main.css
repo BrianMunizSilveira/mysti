@@ -36,22 +36,32 @@ body {
    SUBSCRIBE BUTTON
 ============================ */
 .subscribe-btn {
-    background: #FF0000;
-    color: white;
+    display: flex;
+    background: linear-gradient(45deg, #8B5CF6, #4C1D95);
+    color: #FFF;
     padding: 1rem 2rem;
     border: none;
     border-radius: 50px;
     font-size: 1.2rem;
     cursor: pointer;
-    transition: all 0.3s ease;
-    display: inline-flex;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
     align-items: center;
     gap: 0.5rem;
     margin-top: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 
     &:hover {
         transform: translateY(-3px);
-        background: #CC0000;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(45deg, #7C3AED, #3B0764);
+    }
+
+    & i {
+        color: #ff0000;
+        font-size: 1.5rem;
+        transition: all 0.3s ease-in-out;
+        display: inline-block;
     }
 }
 
@@ -142,6 +152,10 @@ nav {
     }
 
     .hero-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         max-width: 800px;
         padding: 2rem;
         animation: fadeInUp 1s ease-out;
@@ -220,7 +234,7 @@ nav {
 
         .img-about {
             width: 100%;
-            margin-bottom: -0.5rem;
+            margin-bottom: -0.2rem;
 
             img {
                 width: 100%;
@@ -262,6 +276,8 @@ nav {
         margin: 0 auto;
 
         .video-card {
+            display: flex;
+            flex-direction: column;
             background: rgba(139, 92, 246, 0.1);
             border-radius: 1rem;
             overflow: hidden;
@@ -279,7 +295,11 @@ nav {
             }
 
             .video-info {
+                display: flex;
+                flex-direction: column;
                 padding: 1.5rem;
+                align-items: center;
+                
 
                 .video-title {
                     font-size: 1.2rem;
@@ -288,12 +308,17 @@ nav {
                 }
 
                 .video-link {
+                    display: flex;
+                    align-items: center;
+                    padding: 1rem 2rem;
+                    border: none;
+                    border-radius: 50px;
+                    background-color: red;
                     text-decoration: none;
                     color: var(--light);
-                    transition: color 0.3s ease;
 
-                    &:hover {
-                        color: var(--accent);
+                    & i {
+                        margin-right: 0.5rem;
                     }
                 }
             }

@@ -31,7 +31,7 @@ function loadVideos() {
                             <h3 class="video-title">${video.title}</h3>
                             <p>${video.description}</p>
                             <br />
-                            <a href="${video.link}" target="_blank" class="video-link">Assistir</a>
+                            <a href="${video.link}" target="_blank" class="video-link subscribe-btn"> <i class="fab fa-youtube"></i> Assistir</a>
                         </div>
                     </div>
                 `;
@@ -47,8 +47,8 @@ document.querySelector('.subscribe-btn').addEventListener('click', () => {
 // Função para buscar vídeos do canal
 async function fetchVideos() {
     const apiKey = 'AIzaSyDk6X0KW0Jpx7bMIwfyBfo9n7b0pEcj8Vo';
-    const channelId = 'UCZI8ehZkyxWwiOQv3pZ-RAw'; // Substitua pelo ID do canal
-    const maxResults = 6; // Número de vídeos a serem exibidos
+    const channelId = 'UCZI8ehZkyxWwiOQv3pZ-RAw';
+    const maxResults = 6;
 
     const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=${maxResults}`;
 
@@ -82,7 +82,7 @@ async function loadVideos() {
                     <h3 class="video-title">${video.snippet.title}</h3>
                     <p>${video.snippet.description}</p>
                     <br />
-                    <a href="https://www.youtube.com/watch?v=${video.id.videoId}" target="_blank" class="video-link">Assistir</a>
+                    <a href="https://www.youtube.com/watch?v=${video.id.videoId}" target="_blank" class="video-link"> <i class="fab fa-youtube"></i> Assistir</a>
                 </div>
             </div>
         `;
