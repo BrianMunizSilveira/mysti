@@ -44,5 +44,54 @@ document.querySelector('.subscribe-btn').addEventListener('click', () => {
     window.open('https://www.youtube.com/@Mysti07', '_blank');
 });
 
+// Função para buscar vídeos do canal
+async function fetchVideos() {
+    const apiKey = 'AIzaSyDk6X0KW0Jpx7bMIwfyBfo9n7b0pEcj8Vo';
+    const channelId = 'UCZI8ehZkyxWwiOQv3pZ-RAw'; // Substitua pelo ID do canal
+    const maxResults = 6; // Número de vídeos a serem exibidos
+
+    const url = `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=${maxResults}`;
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        return data.items; // Retorna a lista de vídeos
+    } catch (error) {
+        console.error('Erro ao buscar vídeos:', error);
+        return [];
+    }
+}
+
+// Função para exibir os vídeos na página
+async function loadVideos() {
+    const videos = await fetchVideos();
+    const videoGrid = document.querySelector('.video-grid');
+
+    if (videos.length === 0) {
+        videoGrid.innerHTML = '<p>Nenhum vídeo encontrado.</p>';
+        return;
+    }
+
+    videos.forEach(video => {
+        const videoCard = `
+            <div class="video-card">
+                <a href="https://www.youtube.com/watch?v=${video.id.videoId}" target="_blank">
+                    <img src="${video.snippet.thumbnails.high.url}" alt="${video.snippet.title}" class="video-thumbnail">
+                </a>
+                <div class="video-info">
+                    <h3 class="video-title">${video.snippet.title}</h3>
+                    <p>${video.snippet.description}</p>
+                    <br />
+                    <a href="https://www.youtube.com/watch?v=${video.id.videoId}" target="_blank" class="video-link">Assistir</a>
+                </div>
+            </div>
+        `;
+        videoGrid.innerHTML += videoCard;
+    });
+}
+
+// Carrega os vídeos quando a página carregar
+window.addEventListener('load', loadVideos);
+
 // Carrega os vídeos quando a página carregar
 window.addEventListener('load', loadVideos);
